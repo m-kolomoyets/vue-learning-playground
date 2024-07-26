@@ -1,8 +1,8 @@
 <script setup>
-import MyComponent from './components/MyComponent.vue'
+import BindingSection from './components/BindingSection.vue'
 </script>
 
 <template>
     <h1>Hello</h1>
-    <MyComponent />
+    <BindingSection />
 </template>
