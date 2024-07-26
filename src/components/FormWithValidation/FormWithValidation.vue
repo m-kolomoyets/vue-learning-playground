@@ -1,23 +1,23 @@
 <script setup>
-import { useForm } from 'vee-validate'
-import { toTypedSchema } from '@vee-validate/zod'
-import { formSchema } from './constants'
+import { useForm } from 'vee-validate';
+import { toTypedSchema } from '@vee-validate/zod';
+import { formSchema } from './constants';
 
 const { handleSubmit, errors, defineField } = useForm({
     validationSchema: toTypedSchema(formSchema),
-})
+});
 
-const [firstName, firstNameAttrs] = defineField('firstName')
-const [email, emailAttrs] = defineField('email')
+const [firstName, firstNameAttrs] = defineField('firstName');
+const [email, emailAttrs] = defineField('email');
 
 const submitHandler = handleSubmit(
     (values) => {
-        console.log('Form submitted!', values)
+        console.log('Form submitted!', values);
     },
     (errors) => {
-        console.log('Form errors!', errors)
+        console.log('Form errors!', errors);
     }
-)
+);
 </script>
 
 <template>

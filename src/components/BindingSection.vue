@@ -1,10 +1,10 @@
 <script setup>
-const testMessage = 'Hello!'
-const testLinkUrl = 'https://vitejs.dev/guide/features.html'
+const testMessage = 'Hello!';
+const testLinkUrl = 'https://vitejs.dev/guide/features.html';
 const testImage = {
     src: 'https://vitejs.dev/logo.svg',
     alt: 'Vite Logo',
-}
+};
 </script>
 
 <template>

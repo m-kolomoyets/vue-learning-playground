@@ -1,14 +1,14 @@
 <script setup>
-import { computed } from 'vue'
-import { useCounter, useToggle } from '@vueuse/core'
+import { computed } from 'vue';
+import { useCounter, useToggle } from '@vueuse/core';
 
-const [isChecked, toggleIsChecked] = useToggle()
+const [isChecked, toggleIsChecked] = useToggle();
 
-const { count: counter, inc: incrementCounter, dec: decrementCounter } = useCounter(0)
+const { count: counter, inc: incrementCounter, dec: decrementCounter } = useCounter(0);
 
 const isCounterMoreThanFive = computed(() => {
-    return counter.value > 5
-})
+    return counter.value > 5;
+});
 </script>
 
 <template>

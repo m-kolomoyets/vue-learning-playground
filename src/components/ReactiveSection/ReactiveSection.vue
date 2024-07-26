@@ -1,31 +1,31 @@
 <script setup>
-import { reactive, ref } from 'vue'
+import { reactive, ref } from 'vue';
 
 const refState = ref({
     count: 0,
     users: ['Alice', 'Bob', 'Charlie'],
-})
+});
 
 const reactiveState = reactive({
     count: 0,
     users: ['Alice', 'Bob', 'Charlie'],
-})
+});
 
 const incrementReactiveCounter = () => {
-    reactiveState.count++
-}
+    reactiveState.count++;
+};
 
 const incrementRefCounter = () => {
-    refState.value.count++
-}
+    refState.value.count++;
+};
 
 const addReactiveUser = (name) => {
-    reactiveState.users.push(name)
-}
+    reactiveState.users.push(name);
+};
 
 const addRefUser = (name) => {
-    refState.value.users.push(name)
-}
+    refState.value.users.push(name);
+};
 </script>
 
 <!-- NOTE: Once state changes, not all object retrieves rerender, but only the changes one -->

@@ -1,2 +1,2 @@
-export * from './ComputedPropertiesSection.vue'
-export { default } from './ComputedPropertiesSection.vue'
+export * from './ComputedPropertiesSection.vue';
+export { default } from './ComputedPropertiesSection.vue';

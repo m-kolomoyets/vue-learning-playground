@@ -1,21 +1,21 @@
 <script setup>
-import { computed, ref } from 'vue'
-import { USERS } from './constants'
+import { computed, ref } from 'vue';
+import { USERS } from './constants';
 
-const counter = ref(0)
-const userName = ref('')
+const counter = ref(0);
+const userName = ref('');
 
 const squaredCounter = computed(() => {
-    return counter.value * counter.value
-})
+    return counter.value * counter.value;
+});
 
 const isUserNameMoreThatFive = computed(() => {
-    return userName.value.length > 5
-})
+    return userName.value.length > 5;
+});
 
 const isUserAlreadyExists = computed(() => {
-    return USERS.includes(userName.value)
-})
+    return USERS.includes(userName.value);
+});
 </script>
 
 <template>

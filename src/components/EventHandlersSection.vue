@@ -1,24 +1,24 @@
 <script setup>
-import { ref } from 'vue'
-import FormWithValidation from './FormWithValidation'
-const count = ref(0)
+import { ref } from 'vue';
+import FormWithValidation from './FormWithValidation';
+const count = ref(0);
 
 const increment = () => {
-    count.value++
-}
+    count.value++;
+};
 
 const decrement = () => {
-    count.value--
-}
+    count.value--;
+};
 
 const formSubmitHandler = (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    const firstName = event.target[0].value
-    const lastName = event.target[1].value
+    const firstName = event.target[0].value;
+    const lastName = event.target[1].value;
 
-    console.log('Form submitted!', { firstName, lastName })
-}
+    console.log('Form submitted!', { firstName, lastName });
+};
 </script>
 
 <template>

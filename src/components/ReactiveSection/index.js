@@ -1,2 +1,2 @@
-export * from './ReactiveSection.vue'
-export { default } from './ReactiveSection.vue'
+export * from './ReactiveSection.vue';
+export { default } from './ReactiveSection.vue';
