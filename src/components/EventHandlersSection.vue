@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import FormWithValidation from './FormWithValidation'
 const count = ref(0)
 
 const increment = () => {
@@ -30,4 +31,6 @@ const formSubmitHandler = (event) => {
         <input type="text" placeholder="Last Name" />
         <button type="submit">Submit</button>
     </form>
+
+    <FormWithValidation />
 </template>
