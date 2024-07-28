@@ -6,7 +6,8 @@
 // import ConditionalRenderingSection from './components/ConditionalRenderingSection';
 // import ProvideInjectSection from './components/ProvideInjectSection';
 // import WatchersSection from './components/WatchersSection';
-import TemplateRefSection from './components/TemplateRefSection';
+// import TemplateRefSection from './components/TemplateRefSection';
+import AsyncComponentSection from './components/AsyncComponentSection';
 </script>
 
 <template>
@@ -18,5 +19,6 @@ import TemplateRefSection from './components/TemplateRefSection';
     <!-- <ConditionalRenderingSection /> -->
     <!-- <ProvideInjectSection /> -->
     <!-- <WatchersSection /> -->
-    <TemplateRefSection />
+    <!-- <TemplateRefSection /> -->
+    <AsyncComponentSection />
 </template>
