@@ -5,7 +5,8 @@
 // import ComputedPropertiesSection from './components/ComputedPropertiesSection'
 // import ConditionalRenderingSection from './components/ConditionalRenderingSection';
 // import ProvideInjectSection from './components/ProvideInjectSection';
-import WatchersSection from './components/WatchersSection';
+// import WatchersSection from './components/WatchersSection';
+import TemplateRefSection from './components/TemplateRefSection';
 </script>
 
 <template>
@@ -16,5 +17,6 @@ import WatchersSection from './components/WatchersSection';
     <!-- <ComputedPropertiesSection /> -->
     <!-- <ConditionalRenderingSection /> -->
     <!-- <ProvideInjectSection /> -->
-    <WatchersSection />
+    <!-- <WatchersSection /> -->
+    <TemplateRefSection />
 </template>
