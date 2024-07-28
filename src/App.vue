@@ -4,7 +4,8 @@
 // import ReactiveSection from './components/ReactiveSection'
 // import ComputedPropertiesSection from './components/ComputedPropertiesSection'
 // import ConditionalRenderingSection from './components/ConditionalRenderingSection';
-import ProvideInjectSection from './components/ProvideInjectSection';
+// import ProvideInjectSection from './components/ProvideInjectSection';
+import WatchersSection from './components/WatchersSection';
 </script>
 
 <template>
@@ -14,5 +15,6 @@ import ProvideInjectSection from './components/ProvideInjectSection';
     <ReactiveSection /> -->
     <!-- <ComputedPropertiesSection /> -->
     <!-- <ConditionalRenderingSection /> -->
-    <ProvideInjectSection />
+    <!-- <ProvideInjectSection /> -->
+    <WatchersSection />
 </template>
