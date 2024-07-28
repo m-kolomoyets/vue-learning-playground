@@ -7,7 +7,8 @@
 // import ProvideInjectSection from './components/ProvideInjectSection';
 // import WatchersSection from './components/WatchersSection';
 // import TemplateRefSection from './components/TemplateRefSection';
-import AsyncComponentSection from './components/AsyncComponentSection';
+// import AsyncComponentSection from './components/AsyncComponentSection';
+import CustomDirectivesSection from './components/CustomDirectivesSection';
 </script>
 
 <template>
@@ -20,5 +21,6 @@ import AsyncComponentSection from './components/AsyncComponentSection';
     <!-- <ProvideInjectSection /> -->
     <!-- <WatchersSection /> -->
     <!-- <TemplateRefSection /> -->
-    <AsyncComponentSection />
+    <!-- <AsyncComponentSection /> -->
+    <CustomDirectivesSection />
 </template>
