@@ -3,7 +3,8 @@
 // import EventHandlersSection from './components/EventHandlersSection.vue'
 // import ReactiveSection from './components/ReactiveSection'
 // import ComputedPropertiesSection from './components/ComputedPropertiesSection'
-import ConditionalRenderingSection from './components/ConditionalRenderingSection';
+// import ConditionalRenderingSection from './components/ConditionalRenderingSection';
+import ProvideInjectSection from './components/ProvideInjectSection';
 </script>
 
 <template>
@@ -12,5 +13,6 @@ import ConditionalRenderingSection from './components/ConditionalRenderingSectio
     <EventHandlersSection />
     <ReactiveSection /> -->
     <!-- <ComputedPropertiesSection /> -->
-    <ConditionalRenderingSection />
+    <!-- <ConditionalRenderingSection /> -->
+    <ProvideInjectSection />
 </template>
