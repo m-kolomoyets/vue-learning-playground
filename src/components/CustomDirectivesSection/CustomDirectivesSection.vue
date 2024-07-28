@@ -1,4 +1,6 @@
 <script setup>
+import { ref, watch } from 'vue';
+
 const vBoldTitle = {
     mounted(element) {
         element.style.fontWeight = 'bold';
@@ -22,6 +24,27 @@ const vFontSize = {
         element.style.fontSize = `${binding.value}px`;
     },
 };
+const vColoredText = {
+    mounted(element, binding) {
+        element.style.color = binding.arg;
+    },
+};
+
+const vFontSizeFromRef = {
+    mounted(element, binding) {
+        element.style.fontSize = `${binding.value}px`;
+    },
+};
+
+const subtitleFontSize = ref(20);
+
+const incrementSubtitleFontSize = () => {
+    subtitleFontSize.value += 5;
+};
+
+watch(subtitleFontSize, (newValue) => {
+    console.log('New subtitle font size:', newValue);
+});
 </script>
 
 <template>
@@ -32,4 +55,7 @@ const vFontSize = {
     <p v-font-size="20">Font size 20px</p>
     <p v-bold-title v-red-text>Bold Ref</p>
     <p v-bold-title v-red-text v-underline v-font-size="30">Bold Red Underline Font size 30px</p>
+    <p v-colored-text:cyan>Text with custom color argument</p>
+    <button @click="incrementSubtitleFontSize">Increment subtitle font size</button>
+    <h3 v-red-text v-font-size-from-ref="subtitleFontSize">Subtitle</h3>
 </template>
